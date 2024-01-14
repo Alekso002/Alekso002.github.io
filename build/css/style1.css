@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap);.ui-btn{display:inline-block;padding:1rem 1.3rem;cursor:pointer;background:#ff7400;color:#fff;font-size:1.7rem;overflow:hidden;z-index:1;position:relative;border-radius:.5rem;-webkit-box-sizing:border-box;box-sizing:border-box;border:.2rem solid #2c2c2c;text-align:center;vertical-align:middle}.ui-btn::before{content:"";position:absolute;top:0;left:0;height:100%;width:100%;background-color:#e5e5e5;z-index:-1;-webkit-transition:.2s linear;transition:.2s linear;-webkit-clip-path:circle(0 at 0 5%);clip-path:circle(0 at 0 5%)}@media (any-hover:hover) and (any-pointer:fine){.ui-btn:hover::before{-webkit-clip-path:circle(100%);clip-path:circle(100%)}.ui-btn:hover{color:#2c2c2c;border:.2rem solid #2c2c2c}}
+.header .image-bg{height:100vh;background-image:url(../../src/img/header.png);background-repeat:no-repeat;background-size:cover;background-attachment: fixed}.header .color-bg{background-color:#656363}.header__wrapper{width:75%;padding:2rem 12.5%}.header__nav{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__nav .logo{width:10%}.header__nav .logo img{width:100%}
+
+
+.header__order .phone{display:-webkit-box;display:-ms-flexbox;display:flex;color:#fff;margin-right:2rem;font-size:1.5rem}.header__order .phone i{margin-right:1rem}
+.header .menu__btn{display:none}.header .menu__btn i{color:#ff7400;font-size:3rem}.header img{width:10%}@media (max-width:1200px){html{font-size:55%}body>header>div>div.header__wrapper>nav>div.header__order>div{display:none}}@media (max-width:991px){.header__title{margin:15% 35% 0;width:45%}.header__nav .logo img{width:60px}}@media (max-width:767px){.header__wrapper{background:#2c2c2c;position:fixed;z-index:3;top:0}.header__order{display:none}.header__menu ul{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;position:absolute;left:0;top:65px;background-color:#2c2c2c;width:100%;-webkit-clip-path:polygon(0 0,100% 0,100% 0,0 0);clip-path:polygon(0 0,100% 0,100% 0,0 0);z-index:3;-webkit-box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1)}.header__menu ul.active{-webkit-clip-path:polygon(0 0,100% 0,100% 100%,0 100%);clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}.header__menu ul li{margin:2rem 0}.header__menu ul .cart{display:none}.header__title{margin:25% 0 0;width:100%}.header .menu__btn{display:block}}@media (max-width:480px){.header__title{margin-top:50%}}*{margin:0;padding:0;font-family:Poppins,sans-serif;text-decoration:none;text-transform:capitalize;-webkit-transition:.2s linear;transition:.2s linear}html{font-size:62.5%;overflow-x:hidden;scroll-behavior:smooth}html::-webkit-scrollbar{width:1rem}html::-webkit-scrollbar-track{background:0 0}html::-webkit-scrollbar-thumb{background:#ff7400;border-radius:5rem}.section__wrapper{width:75%;margin:0 auto}.section__header{font-size:5rem;text-align:center}.section__header span{color:#ff7400}.ordering-section{margin-top:10rem}.ordering-section .section__wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+#order-form{width:70%;margin-top:5rem}#order-form label{font-size:2rem}#order-form p{font-size:1.5rem}#order-form div{margin:1rem 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#order-form .input{height:20px;padding:1rem .5rem;font-size:1.5rem}#order-form textarea{height:100px;resize:vertical;padding:1rem .5rem;font-size:1.2rem}#order-form select{height:50px;font-size:1.5rem;padding:1rem .5rem}#order-form .checkbox{display:block;margin:2rem 0}#order-form .checkbox label{margin-right:2rem}#order-list>div>h3,#order-list>div>p{font-size:2rem;margin:.5rem 0}#order-list>div{margin:2rem 0}.btns{margin-bottom:5rem}
+
+.header__menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu ul li {
+  margin-right: 2vw; /* Odstęp między elementami w zależności od szerokości widoku */
+}
+
+.header__menu ul li:last-child {
+  margin-right: 0;
+}
+
+.header__menu ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8vw; /* Rozmiar czcionki w zależności od szerokości widoku */
+  margin: 0;
+  padding: 0.5vw 1vw; /* Padding zależny od szerokości widoku */
+  border: 0.1vw solid #fff; /* Grubość obramowania zależna od szerokości widoku */
+  background-color: #ff7400;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.header__menu ul li a:hover {
+  background-color: #ff8c40;
+  border-color: #ff8c40;
+}
+.usluga {
+  width: 50vw; /* Szerokość sekcji usluga */
+  margin:10vh auto 0;
+  padding: 1em;
+  background-color: #e1e1e1;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.usluga img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.usluga h2 {
+  font-size: 4em; /* Powiększenie czcionki nagłówka */
+  margin-bottom: 0.5em;
+}
+
+.usluga p {
+  font-size: 2em; /* Powiększenie rozmiaru tekstu */
+  color: #666;
+}
+
+.section__header {
+  padding: 2vw; /* Padding w jednostkach vw */
+  border: 0.3vw solid #333; /* Grubość ramki w jednostkach vw */
+  border-radius: 2vw; /* Zaokrąglenie narożników w jednostkach vw */
+  background-color: #f0f0f0;
+  display: inline-block;
+  margin-bottom: 4vw; /* Margines dolny w jednostkach vw */
+}
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) 
+{
+	.header__menu ul li a {
+    font-size: 2vw;
+    padding: 1.5vw 3vw;
+  }
+
+  .about-us {
+    padding: 5vw;
+	
+  }
+  .usluga {
+    width: 80vw; /* Dostosowanie szerokości dla iPhone 12 Pro */
+  }
+
+  .usluga h2 {
+    font-size: 4vw; /* Dostosowanie czcionki nagłówka dla iPhone 12 Pro */
+  }
+
+  .usluga p {
+    font-size: 2vw; /* Dostosowanie rozmiaru tekstu dla iPhone 12 Pro */
+  }
+}
